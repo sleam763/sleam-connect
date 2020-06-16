@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 30px;
+  background: white;
+  height: 40px;
+  padding: 10px;
+  width: 100%;
+}
+
+#nav h1 {
+  margin-top: 0;
+}
+
+#header-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+}
+
+#header-link img {
+  margin-top: 7px;
+}
+
+#card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.tile {
+  text-align: center;
+  padding: 20px;
+  width: 259px;
+  max-height: 350px;
+  font-family: 'Times New Roman', sans-serif;
+  margin-top: 0 auto;
+}
+
+.tile p {
+  line-height: 0;
+}
+
+#silver {
+  background: blue;
+  border-radius: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#plan {
+  margin-top: 200px;
+  font-size: 25px;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#bronze {
+  background: orangered;
+  border-radius: 20px;
+  line-height: 90px;
+}
+
+#bronze h1 {
+  font-size: 40px;
+  color: green;
+  margin-top: 0;
+}
+
+#bronze h2 {
+  font-size: 35px;
+}
+
+#silver {
+  line-height: 90px;
+}
+
+#silver h1 {
+  font-size: 40px;
+  color: white;
+  margin-top: 0;
+}
+
+#silver h2 {
+  font-size: 35px;
+}
+
+#gold {
+  background: yellowgreen;
+  border-radius: 20px;
+  line-height: 90px;
+}
+
+#gold h1 {
+  font-size: 40px;
+  color: purple;
+  margin-top: 0;
+}
+
+#gold h2 {
+  font-size: 35px;
+}
+
+button {
+  background: orangered;
+  border: none;
+  padding: 8px;
+  width: 200px;
+  border-radius: 20px;
+  color: white;
+}
+
+#table-container {
+  padding: 15px 20px 20px 20px;
+  justify-content: center;
+  box-shadow: 1px 1px 2px 1px black; 
+  width: 1220px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: white;
+  margin-bottom: 35px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+tr:nth-child(odd) {
+  background: hsl(0, 18%, 93%);
+}
+
+table tr td:first-child {
+  text-align: left;
+}
+
+table tr td {
+  padding: 15px;
+  font-size: 20px;
+}
+
+table img {
+  width: 30px;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.purple {
+  color: purple;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1px;
+  align-items: center;
+  background: black;
+  width: 100%;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* margin: ZZ; */
+}
+
+#footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#footer-list p {
+  padding: 10px;
+}
+
+#footer-nav img {
+  padding: 10px;
+}
+
+body {
+  background: rgb(231, 227, 227);
+}
+
+#container {
+  background: white;
+  height: 700px;
+  background-image: url(images/ska.jpg);
+  /* background-repeat: no-repeat;   */
+  background-position: contain;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+#pricing h1 {
+  width: 320px;
+  font-size: 40px;
+}
+
+#pricing {
+  padding-left: 80px;
+  margin-bottom: 70px;
+  width:100%
+}
+
+#pricing p {
+  line-height: 1px;
+}
+
+@media only screen and (max-width: 560px) {
+  #card {
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  #pricing {
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .tile {
+    width: unset;
+    justify-content: center;
+    margin: auto 40px;
+  }
+
+  footer {
+    width:unset;
   }
 }
